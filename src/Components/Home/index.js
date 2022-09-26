@@ -11,14 +11,22 @@ function Home() {
 
     const nameArray = ['S', 'U', 'M', 'I', 'T.']
     const jobArray = [
+<<<<<<< HEAD
       'Python Developer / ',
+=======
+      'Python / ',
+>>>>>>> master
       'Web Developer.'
     ]
   
     useEffect(() => {
+<<<<<<< HEAD
     //    return setTimeout(() => {
     //     setLetterClass('text-animate-hover')
     //   }, 4000)
+=======
+  
+>>>>>>> master
       const timer = setTimeout(() => {
         setLetterClass('text-animate-hover')
       }, 4000);
@@ -58,6 +66,12 @@ function Home() {
         
       </div>
       
+<<<<<<< HEAD
+=======
+      
+      
+      
+>>>>>>> master
     </div>
 
     

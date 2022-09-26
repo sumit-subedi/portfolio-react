@@ -1,0 +1,53 @@
+.about-page{
+    margin: 0 5% 0 10%;
+    color:white;
+
+    .text-zone{
+        width:60%;
+        float:left;
+        text-align: justify;
+        letter-spacing: 0.75px;
+        line-height: 26px;
+        
+        @media only screen and (max-width: 9500px) and (min-width:700px){
+            width:50%;
+            margin-left: 5%;
+          }
+          @media only screen and  (max-width: 700px) and (min-width:555px){
+            margin-left: 10%;
+              width: 90%;
+              margin-top: 5%;
+              float: none;;
+          }
+          @media only screen and  (max-width: 555px){
+              float: none;
+              width: 90%;
+              margin-top: 15%;
+              font-size: 16px;
+              letter-spacing: 0.5px;
+              line-height: 26px;
+          }
+            
+    }
+    .cube-spinner{
+        float: right;
+        width: 35%;
+       
+        @media only screen and (max-width: 1500px) and (min-width:900px){
+             
+            margin-top:8%;
+            margin-bottom: auto;
+          }
+          @media only screen and (max-width: 900px) and (min-width:700px){
+             
+            margin-top:15%;
+            margin-bottom: auto;
+          }
+          @media only screen and (max-width: 700px) {
+           float: none;
+           margin-left:20%;
+           margin-right: auto;
+          }
+
+    }
+}

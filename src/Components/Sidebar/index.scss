@@ -11,8 +11,37 @@
     @media only screen and (max-width:555px){
      background: rgba(0, 0, 0, 0);
      margin: 0;
+<<<<<<< HEAD
      padding: 0;
     }
+=======
+     width:30px;
+     padding: 0;
+    }
+    img{
+      z-index: 0;
+  width: 60px;
+  height: 60px;
+  opacity: 1;
+  position: absolute;
+  top: 30px;
+  right: 5%;
+  bottom: 0;
+  
+&:hover{
+  cursor: pointer;
+}
+@media only screen and  (max-width: 555px){
+           
+  width: 35px;
+  height:35px;
+  opacity: 0.5;
+  left:15%;
+}
+ 
+ 
+    }
+>>>>>>> master
 
   
      .logo {
@@ -105,6 +134,14 @@
            content: 'ABOUT';
          }
        }
+<<<<<<< HEAD
+=======
+       a.products-link {
+        &:after {
+          content: 'PRODUCTS';
+        }
+      }
+>>>>>>> master
        a.contact-link {
          &:after {
            content: 'CONTACT';
