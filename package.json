@@ -9,6 +9,7 @@
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@fullpage/react-fullpage": "^0.1.22",
     "cra-template": "1.1.3",
+    "gh-pages": "^4.0.0",
     "loaders.css": "^0.1.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
