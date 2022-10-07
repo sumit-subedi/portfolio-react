@@ -30,18 +30,15 @@ const About = () => {
             </div>
           </h1>
           <p>
-            I'm a very ambitious full stack developer looking for a role in
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
-          </p>
+            I'm a very ambitious full stack developer looking for freelancing project, be it web or desktop software. 
+            I'm familiar with multiple stacks from Django to NodeJS and HTMX to React.
+            </p>
           {/* <p align="LEFT">
             I'm quietly confident, naturally curious, and perpetually working on
             improving my chops one design problem at a time.
           </p> */}
           <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
+            I have already completed multiple projects including E-commerce website, POS system and an orgazational website with payment gateway.
           </p>
         </div>
        

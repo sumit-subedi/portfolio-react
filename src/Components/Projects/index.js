@@ -62,8 +62,7 @@ return (
              demo="https://djangohtmxdemo.herokuapp.com/"
              code="https://github.com/sumit-subedi/django-htmx"
              stack={[faPython, faJsSquare]} />
-             <ProjectCard image={ecommerce} />
-             <ProjectCard image={ecommerce} />
+            
              
             
 
