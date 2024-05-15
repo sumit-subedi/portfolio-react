@@ -46,7 +46,7 @@ return (
              stack={[faHtml5, faPython, faCss3, faJsSquare]} />
              <ProjectCard image={Astar}
              type="Personal Project"
-             text="A* Path Finder Visualization"
+             text="AB* Path Finder Visualization"
              demo="https://replit.com/@sumitsubedi/A-Path-Finding-Visualization-By-Sumit?outputonly=true#main.py"
              stack={[faPython]}
              code="https://github.com/sumit-subedi/A-visualizer" />
