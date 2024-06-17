@@ -1,61 +1,75 @@
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import { faGithub, faLinkedinIn, faStackOverflow, faGoogle, faHackerrank } from "@fortawesome/free-brands-svg-icons";
 
-import React from 'react'
-
 const Contact = () => {
-    const [letterClass, setLetterClass] = useState('text-animate')
-   
-    useEffect(() => {
-  
-        const timer = setTimeout(() => {
-          setLetterClass('text-animate-hover')
-        }, 4000);
-        return () => clearTimeout(timer);
-      }, [])
+  const [letterClass, setLetterClass] = useState('text-animate');
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLetterClass('text-animate-hover');
+    }, 4000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const contactLinks = [
+    {
+      icon: faGithub,
+      color: '#171515',
+      href: 'https://github.com/sumit-subedi',
+      label: 'GitHub'
+    },
+    {
+      icon: faHackerrank,
+      color: '#0894d4',
+      href: 'https://www.hackerrank.com/vanje_sumit',
+      label: 'HackerRank'
+    },
+    {
+      icon: faLinkedinIn,
+      color: '#0072b1',
+      href: 'https://www.linkedin.com/in/sumit-subedi-ab741317b/',
+      label: 'LinkedIn'
+    },
+    {
+      icon: faGoogle,
+      color: '#DB4437',
+      href: 'mailto:vanje.sumit@gmail.com',
+      label: 'vanje.sumit@gmail.com'
+    },
+    {
+      icon: faStackOverflow,
+      color: '#F47F24',
+      href: 'https://stackoverflow.com/users/11027649/sumit-subedi',
+      label: 'StackOverflow'
+    }
+  ];
+
   return (
-    <>
-        <div className='contactpage'>
-        <div className="text-zone">
-          <h1>
-              <div className='red'>
+    <div className="contact-page">
+      <div className="text-zone">
+        <h1>
+          <span className="red">
             <AnimatedLetters 
               letterClass={letterClass}
-              strArray={['Let\'s ', ' Connect']}
+              strArray={["L", "e", "t'", "s  ", " ",  "C", "o", "n", "n", "e", "c", "t."]}
               idx={15}
             />
+          </span>
+        </h1>
+        <div className="container">
+          {contactLinks.map((link, index) => (
+            <div className="links" key={index}>
+              <FontAwesomeIcon icon={link.icon} size="2x" color={link.color} />
+              <a href={link.href} target="_blank" rel="noopener noreferrer">{link.label}</a>
             </div>
-          </h1>
-          <div className='container'>
-              <div className='links'>
-          <FontAwesomeIcon icon={faGithub} size="2x" color='#171515' /> <a href='https://github.com/sumit-subedi'>  GitHub </a>
-          </div>
-          <div className='links'>
-        <FontAwesomeIcon icon={faHackerrank} size="2x" color='#0894d4' /> <a href='https://www.hackerrank.com/vanje_sumit'>  HackerRank </a>
+          ))}
         </div>
-        <div className='links'>
-        <FontAwesomeIcon icon={faLinkedinIn} size="2x" color='#0072b1' /> <a href='https://www.linkedin.com/in/sumit-subedi-ab741317b/'>  Linked In </a>
-        </div>
-        <div className='links'>
-        <FontAwesomeIcon icon={faGoogle} size="2x" color='#DB4437' /> <a href='mailto:vanje.sumit@gmail.com'>  Vanje,sumit@gmail.com </a>
-        </div>
-        <div className='links'>
-        <FontAwesomeIcon icon={faStackOverflow} size="2x" color='#F47F24' /> <a href="https://stackoverflow.com/users/11027649/sumit-subedi">StackOverflow</a>
-        </div>
-        </div>
-        </div>
-       
+      </div>
+    </div>
+  );
+};
 
-
-
-
-        </div>
-    </>
-  )
-}
-
-export default Contact
+export default Contact;

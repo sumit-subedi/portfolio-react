@@ -1,69 +1,94 @@
-.contactpage {
-    margin: 0 5% 0 10%;
-    color:white;
-    .text-zone{
-        width:70%;
-        float:left;
-        text-align: justify;
-        letter-spacing: 0.75px;
-        line-height: 26px;
-        
-        @media only screen and (max-width: 9500px) and (min-width:700px){
-            width:50%;
-            margin-left: 5%;
-          }
-          @media only screen and  (max-width: 700px) and (min-width:555px){
-            margin-left: 10%;
-              width: 90%;
-              margin-top: 5%;
-              float: none;;
-          }
-          @media only screen and  (max-width: 555px){
-              float: none;
-              width: 90%;
-              margin-top: 15%;
-              font-size: 16px;
-              letter-spacing: 0.5px;
-              line-height: 26px;
-          }
-          .container{
-              
-            flex: auto;
-              width: 100%;
-              margin-top: 10%;
+:root {
+  --primary-color: #ffd700;
+  --text-color: #fff;
+  --bg-color: #181818;
+  --text-spacing: 0.75px;
+  --line-height: 26px;
+  --font-size-base: 16px;
+  --font-size-large: 18px;
+  --media-large: 950px;
+  --media-medium: 700px;
+  --media-small: 555px;
+}
 
-              .links{
-                display: flex;
-                float: left;
-                min-width: 50%;
-                margin-right: 10%;
-                margin-top: 10%;
-              
-              svg{
-                flex: none;
-                align-self:flex-start;
-                margin-top: -6px;
-                margin-right: 3%;
-            }
-              a{
-                  text-decoration: none;
-                  color: white;
-                  width: 100%;
-                  float: left;
-                  margin-right: 5%;
-                  font-size: 120%;
-                  font-weight: 700;
-                  display: flex;
-                  align-items:flex-start;
-                  
+.contact-page {
+  margin: 0 5% 0 10%;
+  color: var(--text-color);
 
-                  &:hover{
-                      color: aqua;
-                  }
-                  
-              }
-            }
-          }
-            
+  .text-zone {
+    width: 90%;
+    float: left;
+    text-align: justify;
+    letter-spacing: var(--text-spacing);
+    line-height: var(--line-height);
+
+    @media (max-width: 950px) {
+      width: 90%;
+      margin-left: 5%;
     }
+
+    @media (max-width: 700px) {
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 5%;
+      float: none;
+    }
+
+    @media (max-width: 555px) {
+      width: 90%;
+      margin-top: 15%;
+      font-size: var(--font-size-base);
+      letter-spacing: 0.5px;
+      line-height: var(--line-height);
+      float: none;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+
+      @media (max-width: 700px) {
+        font-size: 2rem;
+      }
+
+      @media (max-width: 555px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10%;
+
+      .links {
+        display: flex;
+        align-items: center;
+        margin: 3% 0;
+
+        svg {
+          margin-right: 3%;
+        }
+
+        a {
+          text-decoration: none;
+          color: var(--text-color);
+          font-size: 1.2rem;
+          font-weight: 700;
+
+          &:hover {
+            color: aqua;
+          }
+
+          @media (max-width: 700px) {
+            font-size: 1rem;
+          }
+
+          @media (max-width: 555px) {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,53 +1,125 @@
-.about-page{
-    margin: 0 5% 0 10%;
-    color:white;
+:root {
+  --primary-color: #ffd700;
+  --text-color: #fff;
+  --bg-color: #181818;
+  --text-spacing: 1px;
+  --line-height: 32px;
+  --font-size-base: 16px;
+  --font-size-large: 18px;
+  --media-large: 9500px;
+  --media-medium: 700px;
+}
 
-    .text-zone{
-        width:60%;
-        float:left;
-        text-align: justify;
-        letter-spacing: 0.75px;
-        line-height: 26px;
-        
-        @media only screen and (max-width: 9500px) and (min-width:700px){
-            width:50%;
-            margin-left: 5%;
-          }
-          @media only screen and  (max-width: 700px) and (min-width:555px){
-            margin-left: 10%;
-              width: 90%;
-              margin-top: 5%;
-              float: none;;
-          }
-          @media only screen and  (max-width: 555px){
-              float: none;
-              width: 90%;
-              margin-top: 15%;
-              font-size: 16px;
-              letter-spacing: 0.5px;
-              line-height: 26px;
-          }
-            
-    }
-    .cube-spinner{
-        float: right;
-        width: 35%;
-       
-        @media only screen and (max-width: 1500px) and (min-width:900px){
-             
-            margin-top:8%;
-            margin-bottom: auto;
-          }
-          @media only screen and (max-width: 900px) and (min-width:700px){
-             
-            margin-top:15%;
-            margin-bottom: auto;
-          }
-          @media only screen and (max-width: 700px) {
-           float: none;
-           margin-left:20%;
-           margin-right: auto;
-          }
+.about-page {
+  margin: 0 5% 0 10%;
+  color: var(--text-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
 
+  .text-zone {
+    width: 80%;
+    text-align: justify;
+    letter-spacing: var(--text-spacing);
+    line-height: var(--line-height);
+    margin-right: 20px;
+
+    @media (max-width: var(--media-large)) and (min-width: var(--media-medium)) {
+      width: 50%;
+      margin-left: 5%;
+      margin-right: 10px;
     }
+
+    @media (max-width: 765px) and (min-width: 555px) {
+      margin-left: 10%;
+      width: 90%;
+      margin-top: 5%;
+    }
+
+    @media (max-width: 555px) {
+      width: 90%;
+      margin-top: 2%;
+      font-size: 24px;
+      line-height: var(--line-height);
+    }
+
+    h1 {
+      margin-bottom: 15px;
+      font-size: 2rem;
+      color: var(--primary-color);
+    }
+
+    p {
+      margin-bottom: 15px;
+      font-size: 1rem;
+      color: var(--text-color);
+    }
+  }
+
+  .education-card {
+    background: var(--bg-color);
+    border: 1px solid var(--primary-color);
+    padding: 15px;
+    border-radius: 8px;
+    cursor: move;
+    transition: transform 0.3s ease, background 0.3s ease;
+    width: 35%;
+    min-width: 300px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+    &:hover {
+      
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .drag-icon {
+      font-size: 1.2rem;
+      color: var(--secondary-color);
+      margin-left: 10px;
+    }
+
+    .drag-text {
+      font-size: 0.8rem;
+      color: var(--secondary-color);
+      margin-left: 5px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: #61dafb;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 10px;
+        font-size: 1rem;
+        color: #fff;
+
+        strong {
+          color: #61dafb;
+        }
+      }
+    }
+
+    @media (max-width: 700px) {
+      width: 100%;
+      max-width: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
 }
