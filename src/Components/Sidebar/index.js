@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUser, faEnvelope, faDiagramProject } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUser, faEnvelope, faDiagramProject, faHistory } from '@fortawesome/free-solid-svg-icons';
 import avatar from '../images/avatar.png';
 import './index.scss';
 
@@ -19,9 +19,9 @@ const Sidebar = () => {
                         <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
                     </a>
                 </li>
-                <li data-menuanchor="about">
+                <li data-menuanchor="experience">
                     <a href="#experience" className='experience-link' aria-label="Experience">
-                        <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+                        <FontAwesomeIcon icon={faHistory} color="#4d4d4e" />
                     </a>
                 </li>
                 <li data-menuanchor="projects">
