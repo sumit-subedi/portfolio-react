@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #ffd700;
+    --text-color: #fff;
+    --bg-color: #181818;
+    --text-spacing: 0.75px;
+    --line-height: 26px;
+    --font-size-base: 16px;
+    --font-size-large: 18px;
+    --media-large: 950px;
+    --media-medium: 700px;
+    --media-small: 555px;
+  }
+  
+  .experience-page {
+    margin: 0 5% 0 10%;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  
+    .text-zone {
+      width: 100%;
+      text-align: justify;
+      letter-spacing: var(--text-spacing);
+      line-height: var(--line-height);
+  
+      h1 {
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+        color: var(--primary-color);
+      }
+  
+      .timeline {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+  
+        .timeline-card {
+          background: #1e1e1e;
+          border-radius: 10px;
+          padding: 15px;
+          width: calc(30% - 20px); 
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+          transition: transform 0.3s, box-shadow 0.3s;
+          text-align: center;
+
+          
+          @media (max-width: var(--media-small)) {
+            width: calc(100% - 20px); 
+            padding: 10px;
+  
+            .card-content {
+              h2 {
+                font-size: 1rem;
+              }
+  
+              h3 {
+                font-size: 0.9rem;
+              }
+  
+              p {
+                display: none; 
+              }
+            }
+  
+            &:hover .card-content p {
+              display: block; 
+            }
+          }
+  
+          .card-content {
+            h2 {
+              font-size: 1.2rem;
+              color: #61dafb;
+            }
+  
+            h3 {
+              margin-top: 10px;
+              font-size: 1rem;
+              color: var(--primary-color);
+            }
+  
+            p {
+              margin-top: 10px;
+              font-size: 0.9rem;
+              color: #b0b0b0;
+            }
+          }
+  
+          &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+          }
+  
+          
+  
+          @media (max-width: var(--media-medium)) {
+            width: calc(45% - 20px); 
+          }
+  
+        }
+      }
+    }
+  }
+  

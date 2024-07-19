@@ -19,6 +19,11 @@ const Sidebar = () => {
                         <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
                     </a>
                 </li>
+                <li data-menuanchor="about">
+                    <a href="#experience" className='experience-link' aria-label="Experience">
+                        <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+                    </a>
+                </li>
                 <li data-menuanchor="projects">
                     <a href="#projects" className='projects-link' aria-label="Projects">
                         <FontAwesomeIcon icon={faDiagramProject} color="#4d4d4e" />

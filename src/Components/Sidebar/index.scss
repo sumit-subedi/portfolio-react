@@ -134,6 +134,10 @@
         content: 'ABOUT';
       }
 
+      &.experience-link:after {
+        content: "EXPERIENCE";
+      }
+
       &.projects-link:after {
         content: 'PROJECTS';
       }

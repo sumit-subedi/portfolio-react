@@ -6,6 +6,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import Home from './Components/Home'
 import About from './Components/About'
 import Projects from './Components/Projects'
+import MyExperience from "./Components/MyExperience";
 import Contact from './Components/Contact'
 import Sidebar from "./Components/Sidebar"
 
@@ -19,7 +20,7 @@ class MySection extends React.Component {
   }
 }
 
-const anchors = ["home", "about", "projects", "contact"];
+const anchors = ["home", "about", "experience", "projects", "contact"];
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
     menu="#myMenu"
     navigation
     navigationTooltips={anchors}
-    sectionsColor={["rgb(40, 44, 52)", "rgb(40, 44, 56)", "rgb(40, 44, 62)", "rgb(40, 44, 68)"]}
+    sectionsColor={["rgb(40, 44, 52)", "rgb(40, 44, 56)", "rgb(40, 44, 62)", "rgb(40, 44, 68)",  "rgb(40, 44, 82)"]}
     
     render={({ state, fullpageApi }) => {
       // console.log("render prop change", state, fullpageApi); // eslint-disable-line no-console
@@ -40,6 +41,7 @@ function App() {
         <div>
           <MySection  content= {<Home />} />
           <MySection content={<About />} />
+          <MySection content = { <MyExperience /> } />
           <MySection content={<Projects />} />
           <MySection content={<Contact />} />
           
