@@ -10,7 +10,6 @@
     "@fullpage/react-fullpage": "^0.1.24",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/user-event": "^13.5.0",
-    "@babel/plugin-proposal-private-property-in-object": "^",
     "bootstrap": "^5.1.3",
     "react": "^16.1.0",
     "react-3d-cube": "^1.0.5",
@@ -50,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "web-vitals": "^2.1.4"
   }
 }
