@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://sumit-subedi.github.io/portfolio-react",
+  "homepage": "https://sumit-subedi.com.np",
   "private": true,
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
