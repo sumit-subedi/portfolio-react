@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.aca6dd8a.css",
+    "main.js": "/static/js/main.de41b990.js",
+    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/ecommerce.jpg": "/static/media/ecommerce.a1e60bc483bfa726720e.jpg",
+    "static/media/react.png": "/static/media/react.781c4e11154d4c1a632a.png",
+    "static/media/linux.png": "/static/media/linux.d3415112f3dcbad07634.png",
+    "static/media/djangohtmx.png": "/static/media/djangohtmx.149ab0ece7b873e659da.png",
+    "static/media/python.png": "/static/media/python.89b7607a53bab06906c3.png",
+    "static/media/teenpatti.png": "/static/media/teenpatti.be94830332c20086bfd2.png",
+    "static/media/avatar.png": "/static/media/avatar.84a4ee89eb0a48a85368.png",
+    "static/media/html.png": "/static/media/html.a73eaf01a0f54560ad3e.png",
+    "static/media/git.png": "/static/media/git.db3c951cb95cffac6d25.png",
+    "static/media/django.png": "/static/media/django.fc7e4fe950f7781fbd68.png",
+    "index.html": "/index.html",
+    "main.aca6dd8a.css.map": "/static/css/main.aca6dd8a.css.map",
+    "main.de41b990.js.map": "/static/js/main.de41b990.js.map",
+    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aca6dd8a.css",
+    "static/js/main.de41b990.js"
+  ]
+}
